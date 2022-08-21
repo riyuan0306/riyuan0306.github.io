@@ -93,7 +93,7 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>1. Windows 10 专业版 21H2 19044.1947
+        <h1 id="开冲"><a href="#开冲" class="headerlink" title="开冲"></a>开冲</h1><h2 id="运行环境："><a href="#运行环境：" class="headerlink" title="运行环境："></a>运行环境：</h2><pre><code>1. Windows 10 专业版 21H2 19044.1947
 2. NVM 1.1.9
 3. Nodejs 16.17.0
 4. Github账号
@@ -152,11 +152,20 @@ hexo server #启动服务器 默认情况下，访问网址为： http://localho
 <h2 id="部署博客"><a href="#部署博客" class="headerlink" title="部署博客"></a>部署博客</h2><pre><code>hexo deploy
 </code></pre>
 <p>再次打开GitHub仓库页面就会发现本地blog文件夹中的文件都再GitHub上部署完成!</p>
-<h2 id="完事"><a href="#完事" class="headerlink" title="完事"></a>完事</h2>
+<h1 id="完事"><a href="#完事" class="headerlink" title="完事"></a>完事</h1><h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><pre><code>hexo deploy时遇到
+
+fatal: unable to access &#39;https://github.com/.......&#39;: OpenSSL SSL_read: Connection was reset, errno 10054
+
+产生原因：一般是这是因为服务器的SSL证书没有经过第三方机构的签署，所以才报错
+解决办法：在git bash输入一下命令解除ssl验证后，再次部署即可：
+
+git config --global http.sslVerify &quot;false&quot;
+</code></pre>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%88%B0GitHub/" data-id="cl732zirj0002p0umfji70di8" data-title="Hexo博客搭建到GitHub" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/08/21/Hexo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%88%B0GitHub/" data-id="cl7336g060002akum4lax32s2" data-title="Hexo博客搭建到GitHub" class="article-share-link">Share</a>
       
       
       
@@ -209,7 +218,7 @@ hexo server #启动服务器 默认情况下，访问网址为： http://localho
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/08/21/hello-world/" data-id="cl732zirg0001p0um6gh8e4c1" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/08/21/hello-world/" data-id="cl7336g030001akum58nf1vwf" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
